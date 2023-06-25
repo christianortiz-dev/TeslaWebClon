@@ -1,0 +1,200 @@
+/* ? ==================== GENERAL ==================== */
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../font/GothamBook.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'GothamBook';
+}
+
+html {
+    font-family: 'GothamBook';
+    font-size: 62.5%;
+}
+
+/* ? ==================== NAVBAR ==================== */
+
+#mainTopNavBar {
+    margin-top: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    z-index: 200;
+
+    font-size: .75rem;
+}
+
+/* #mainTopNavBar div {
+    border: 1px solid red;
+}
+#mainTopNavBar div button{
+    border: 1px solid green;
+} */
+
+#mainTopNavBar button {
+    /* color: white; */
+    padding: 8px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+
+    transition: all .5s;
+}
+
+#mainTopNavBar button:hover {
+    background-color: #00000010;
+    backdrop-filter: blur(10px);
+}
+
+/* "Models" DIV of #mainTopBar */
+.models {
+    text-align: center;
+    width: 50%;
+}
+
+/* "Logo" DIV of #mainTopBar */
+.logo {
+    width: 25%;
+    text-align: left;
+}
+
+/* "Other" DIV of #mainTopBar */
+.other {
+    width: 25%;
+    text-align: right;
+}
+
+/* Tesla Logo SVG */
+#teslaLogo {
+    width: 120px;
+    margin-left: 48px;
+    filter: invert();
+}
+
+/* ? ==================== ARTICLES ==================== */
+
+/* All "articles" inside "main" */
+main article {    
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Background video of .mainArticle */
+.mainArticle>#mainVideo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+.modelYArticle {
+    background-image: url(../img/ModelY.avif);
+}
+.model3Article {
+    background-image: url(../img/Model3.avif);
+}
+.modelSArticle {
+    background-image: url(../img/ModelS.avif);
+}
+.modelXArticle {
+    background-image: url(../img/ModelX.avif);
+}
+.powerwallArticle {
+    background-image: url(../img/Powerwall.avif);
+}
+.accesoriosArticle {
+    background-image: url(../img/Accesorios.avif);
+}
+
+/*=================*/
+.articleTittle {
+    /* padding-top: 150px;
+    color: white; */
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 180px;
+    /* color: white; */
+}
+
+.content {
+    position: relative;
+    height: 100vh;
+}
+
+.content p, .content h1 {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4.1rem;
+    margin-bottom: 4px;
+}
+.content p {    
+    font-size: 1.5rem;
+}
+
+.bottomButtons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 60px;
+    flex-direction: row;
+}
+
+.bottomButtons button {
+    padding: 12px 55px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    margin: 0 10px 0 10px;
+}
+
+.bottomButtons p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -70px;
+    color: rgba(23, 26, 32, 0.8);
+    border-bottom: 1px solid rgba(23, 26, 32, 0.8);
+    font-size: 1.3rem;
+}
+
+.bottomButtons p:hover {
+    border-bottom: 1px solid rgba(23, 26, 32, 0.8);
+}
+
+.borderedButton {
+    border: 3px solid white;
+    background: none;
+    color: white;
+}
+
+.darkButton {
+    border: none;
+    color: white;
+    background-color: rgba(23, 26, 32, 0.8);
+    opacity: 90%;    
+}
+
+.lightButton {
+    border: none;
+    color: #393c41;
+    background-color: rgba(244, 244, 244, 0.65);
+    opacity: 90%;    
+}
